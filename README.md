@@ -28,7 +28,7 @@ Make sure you have the following installed:
    
 3. **Download Composer packages**
    ```bash
-   composer i
+   composer i && npm i
 
 4. **Api key generation**
    ```bash

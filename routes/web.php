@@ -9,9 +9,9 @@ Route::get('/', function () {
 })->name('home');
 
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('dashboard', function () {
+    Route::get('posts.index', function () {
         return redirect()->route('posts.index');
-    })->name('dashboard');
+    })->name('posts.index');
 });
 
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');

@@ -21,7 +21,7 @@ Make sure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/your-project.git
+   git clone https://github.com/bonczbe/Ominimo.git
    cd Ominimo
 
 2. **Copy .env.example to .env and edit database connection**

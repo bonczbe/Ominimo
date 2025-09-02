@@ -15,18 +15,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        $user = User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-            'password' => Hash::make('123456'),
+        $this->call([
+            UserSeeder::class,
+            PostSeeder::class,
         ]);
-
-        Post::factory()
-            ->count(10)
-            ->for($user)
-            ->hasComments(3, ['user_id' => $user->id])
-            ->create();
     }
 }

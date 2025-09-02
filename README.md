@@ -30,14 +30,18 @@ Make sure you have the following installed:
    ```bash
    composer i
 
-4. **Migrate database and seed template datas**
+4. **Api key generation**
+   ```bash
+   php artisan key:generate
+   
+5. **Migrate database and seed template datas**
    ```bash
    php artisan migrate --seed
 
-5. **Run developement server**
+6. **Run developement server**
    ```bash
    composer run dev
    
-6. **Login with the following user:**
+7. **Login with the following user:**
    email: test@example.com
    password: 123456

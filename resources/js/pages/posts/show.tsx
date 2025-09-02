@@ -28,6 +28,7 @@ type PostProps = {
 };
 export default function ShowPostPage({ post }: PostProps) {
     const handleDeletePost = (id: number) => {
+        console.log('Post deleted with id:', id);
         router.visit(`/posts`);
     };
 

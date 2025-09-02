@@ -30,7 +30,6 @@ type ListProps = {
 };
 
 export default function List({ posts }: ListProps) {
-    const { auth } = usePage<SharedData>().props;
     const [postsList, setPostsList] = useState(posts);
 
     const handleDeletePost = (id: number): void => {

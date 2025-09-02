@@ -31,7 +31,6 @@ type PostProps = {
 
 export function Post({ post, handleDeletePost }: PostProps) {
     const { url } = usePage();
-    const { auth } = usePage<SharedData>().props;
     const [comments, setComments] = useState(post.comments);
     const [newComment, setNewComment] = useState('');
 
